@@ -19,7 +19,7 @@ const BIRTHDAY=validDate(cfgDate)?cfgDate:DEFAULT_BIRTHDAY;
    and spreads them evenly over the pages after the calendar page.
    Falls back to /assets/memories/memory-01.jpg ... memory-18.jpg
 ------------------------------------------------------------------- */
-const P=n=>({src:`/assets/memories/memory-${String(n).padStart(2,'0')}.jpg`,alt:`Our photo ${n}`});
+const P=n=>({src:`${import.meta.env.BASE_URL}assets/memories/memory-${String(n).padStart(2,'0')}.jpg`,alt:`Our photo ${n}`});
 const toPhotos=list=>(list||[]).map(ph=>typeof ph==='string'?{src:ph}:ph);
 const fromContent=Array.isArray(content.albumPages)
   ?content.albumPages.flatMap(e=>e&&(e.left||e.right)
