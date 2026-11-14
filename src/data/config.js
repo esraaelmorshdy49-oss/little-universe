@@ -1,10 +1,10 @@
 // ============ EDIT YOUR PERSONAL TEXT HERE ============
 export const siteConfig = {
   coupleName: 'Esraa & Mustafa', // shown at the very end
-  musicUrl: '/assets/music/our-song.mp3',
+  musicUrl: `${import.meta.env.BASE_URL}assets/music/our-song.mp3`,
   songTitle: 'Our song',
-  videoUrl: '/assets/video/our-video.mp4',
-
+videoUrl: `${import.meta.env.BASE_URL}assets/video/our-video.mp4`,
+  
   // --- SECRET QUESTION & ANSWER (capitalization/extra spaces don't matter) ---
   mode: 'question', // 'question' or 'code'
   secretCode: 'Friends Academy',
