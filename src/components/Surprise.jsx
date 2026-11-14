@@ -87,7 +87,7 @@ export default function Surprise({ onDone }) {
             onClick={onDone}
             icon={
               <video
-  src="/assets/video/sticker_fixed.mp4"
+ src={`${import.meta.env.BASE_URL}assets/video/sticker_fixed.mp4`}
   autoPlay
   loop
   muted
